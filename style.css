@@ -1,0 +1,160 @@
+/* style.css */
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.6);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: background 0.4s ease;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #007bff;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.nav-links a:hover {
+  color: #007bff;
+  transform: scale(1.05);
+}
+
+/* Hero Section */
+#home {
+  height: 100vh;
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  padding: 100px 30px;
+}
+
+#home h1 {
+  font-size: 3.5rem;
+  animation: fadeIn 1.5s ease;
+}
+
+#home p {
+  font-size: 1.2rem;
+  margin-top: 15px;
+  max-width: 600px;
+  animation: fadeIn 2s ease;
+}
+
+/* Other Sections */
+section {
+  padding: 100px 60px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#features {
+  background-color: #ffffff;
+}
+
+#about {
+  background-color: #e8f0fe;
+}
+
+#contact {
+  background-color: #ede7f6;
+}
+
+/* Headings */
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+/* Section background colors */
+.blue-bg {
+  background: linear-gradient(to right, #007bff, #66b2ff);
+  color: white;
+}
+
+.pink-bg {
+  background: linear-gradient(to right, #ffb6c1, #ffc0cb);
+  color: #333;
+}
+
+.purple-bg {
+  background: linear-gradient(to right, #d8bfd8, #dda0dd);
+  color: #333;
+}
+
+.contact-gradient {
+  background: linear-gradient(135deg, #f6d365, #fda085);
+  color: #333;
+}
+
+/* Image style for section illustrations */
+.section-img {
+  max-width: 300px;
+  margin-top: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  animation: fadeIn 1.5s ease;
+}
+
+
+
+/* Optional enhancements for spacing and font */
+section h1, section h2 {
+  margin-bottom: 10px;
+}
+section p, section ul {
+  font-size: 1.1rem;
+}
+ul {
+  padding-left: 20px;
+}
